@@ -51,8 +51,8 @@
 #Nav-List li {
   list-style: none;
 }
-nav h2{
- font-size: 2em; 
+nav h2 {
+  font-size: 2em;
 }
 nav {
   padding: 2vh;
@@ -65,7 +65,6 @@ nav {
   margin-bottom: 4%;
 }
 .Hero-Heading h1 {
-    /* word-wrap: break-word; */
   font-size: 4em;
   margin-bottom: 2%;
 }
@@ -84,45 +83,41 @@ nav {
   font-weight: bold;
   cursor: pointer;
 }
-.btn:hover{
-  background-color:#ff7300;
+.btn:hover {
+  background-color: #ff7300;
 }
-header img{
-    display: block;
-    width: 72.5vw;
-    margin: 5% auto 0 auto;
-    padding-bottom: 3%;
+header img {
+  display: block;
+  width: 72.5vw;
+  margin: 5% auto 0 auto;
+  padding-bottom: 3%;
 }
-#QuickList{
+#QuickList {
   justify-content: space-between;
   align-items: center;
   gap: 5%;
   width: 72.5vw;
   margin: 5% auto 0px auto;
 }
-.QuickList-Img-Container img{
+.QuickList-Img-Container img {
   width: 20vw;
 }
-.QuickList-Img-Container{
+.QuickList-Img-Container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 2%;
 }
-#QuickList-Headings h2 .Qc{
+#QuickList-Headings h2 .Qc {
   font-weight: normal;
 }
-#QuickList-Headings p{
+#QuickList-Headings p {
   margin-bottom: 8%;
 }
-#QuickList-Headings h2{
+#QuickList-Headings h2 {
   font-size: 2.8125em;
   margin-bottom: 6%;
 }
-
-
-
-
 
 @media screen and (max-width: 575.98px) {
   nav {
@@ -131,30 +126,69 @@ header img{
     width: 90vw;
     margin: 0px auto 0px auto;
   }
+  #Nav-List ul a {
+  font-size: 0.8em;
+}
   #Nav-List ul {
-    font-size: 3vw;
+    font-size: 100%;
     gap: 2vw;
   }
   .Hero-Heading h1 {
     /* word-wrap: break-word; */
-  font-size: 2em;
+    font-size: 2em;
+  }
+  nav h2 {
+    text-align: center;
+    font-size: 4vw;
+  }
+  #QuickList {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+    width: 72.5vw;
+    margin: 5% auto 0px auto;
+  }
+  #QuickList-Headings {
+    text-align: center;
+  }
+  .QuickList-Img-Container img {
+    width: 35vw;
+  }
 }
-nav h2{
-  text-align: center;
- font-size: 4vw; 
-}
-#QuickList{
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5vw;
-  width: 72.5vw;
-  margin: 5% auto 0px auto;
-}
-#QuickList-Headings{
-  text-align: center;
-}
-.QuickList-Img-Container img{
-  width: 35vw;
-}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  nav {
+    margin-top: 50px;
+    justify-content: space-between;
+    /* width: 72.5vw; */
+    margin: 0px auto 0px auto;
+  }
+  #Nav-List ul {
+    font-size: 100%;
+    gap: 2vw;
+  }
+  nav h2 {
+    text-align: center;
+    font-size: 3vw;
+  }
+  .Hero-Heading h1 {
+    font-size: 3em;
+    margin-bottom: 2%;
+  }
+  #QuickList{
+    width: 80vw;
+  }
+  #QuickList-Headings p{
+    font-size: 0.9em;;
+  }
+  #QuickList-Headings button{
+    font-size: 0.9em;
+  }
+  #QuickList-Headings{
+    text-align: center;
+  }
+  #QuickList-Headings h2{
+    text-align: center;
+    font-size: 2em;
+  }
 }
