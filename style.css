@@ -82,6 +82,10 @@ nav {
   font-size: 1.25em;
   padding: 3% 4%;
   font-weight: bold;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color:#ff7300;
 }
 header img{
     display: block;
@@ -89,6 +93,37 @@ header img{
     margin: 5% auto 0 auto;
     padding-bottom: 3%;
 }
+#QuickList{
+  justify-content: space-between;
+  align-items: center;
+  gap: 5%;
+  width: 72.5vw;
+  margin: 5% auto 0px auto;
+}
+.QuickList-Img-Container img{
+  width: 20vw;
+}
+.QuickList-Img-Container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2%;
+}
+#QuickList-Headings h2 .Qc{
+  font-weight: normal;
+}
+#QuickList-Headings p{
+  margin-bottom: 8%;
+}
+#QuickList-Headings h2{
+  font-size: 2.8125em;
+  margin-bottom: 6%;
+}
+
+
+
+
+
 @media screen and (max-width: 575.98px) {
   nav {
     margin-top: 50px;
@@ -107,5 +142,19 @@ header img{
 nav h2{
   text-align: center;
  font-size: 4vw; 
+}
+#QuickList{
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5vw;
+  width: 72.5vw;
+  margin: 5% auto 0px auto;
+}
+#QuickList-Headings{
+  text-align: center;
+}
+.QuickList-Img-Container img{
+  width: 35vw;
 }
 }
