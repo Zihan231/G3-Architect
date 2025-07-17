@@ -119,6 +119,46 @@ header img {
   margin-bottom: 6%;
 }
 
+#Feature-Section {
+  width: 75vw;
+  margin: 5% auto 0 auto;
+  gap: 5%;
+}
+.Feature-Img-Container {
+  width: 40vw;
+}
+.Feature-Headings p {
+  margin-bottom: 12%;
+}
+.Feature-Headings h1 {
+  font-size: 2.8rem;
+  margin-bottom: 2vw;
+  padding-left: 5%;
+  border-left: #ff900e 4px solid;
+}
+.Feature-Cards h4 {
+  margin-bottom: 2%;
+}
+.Feature-Cards {
+  padding: 6% 10%;
+  border-radius: 8px;
+  margin-bottom: 7%;
+}
+.JamboTxt {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.Feature-Img-Container button {
+  width: 60%;
+  height: 15%;
+  padding: 3% 4%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: -15%;
+  margin-left: -15%;
+}
+
+/* For mobile */
 @media screen and (max-width: 575.98px) {
   nav {
     margin-top: 50px;
@@ -127,14 +167,13 @@ header img {
     margin: 0px auto 0px auto;
   }
   #Nav-List ul a {
-  font-size: 0.8em;
-}
+    font-size: 0.8em;
+  }
   #Nav-List ul {
     font-size: 100%;
     gap: 2vw;
   }
   .Hero-Heading h1 {
-    /* word-wrap: break-word; */
     font-size: 2em;
   }
   nav h2 {
@@ -155,7 +194,26 @@ header img {
   .QuickList-Img-Container img {
     width: 35vw;
   }
+  #Feature-Section img {
+    width: 100%;
+  }
+  .Feature-Img-Container {
+    display: none;
+  }
+  #Feature-Section {
+    width: 90vw;
+    margin: 10% auto 0 auto;
+  }
+  .Feature-Img-Container button {
+    display: none;
+  }
+  .Feature-Cards {
+    padding: 3% 5%;
+    border-radius: 8px;
+    margin-bottom: 4%;
+  }
 }
+/* For tab */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   nav {
     margin-top: 50px;
@@ -175,19 +233,19 @@ header img {
     font-size: 3em;
     margin-bottom: 2%;
   }
-  #QuickList{
+  #QuickList {
     width: 80vw;
   }
-  #QuickList-Headings p{
-    font-size: 0.9em;;
-  }
-  #QuickList-Headings button{
+  #QuickList-Headings p {
     font-size: 0.9em;
   }
-  #QuickList-Headings{
+  #QuickList-Headings button {
+    font-size: 0.9em;
+  }
+  #QuickList-Headings {
     text-align: center;
   }
-  #QuickList-Headings h2{
+  #QuickList-Headings h2 {
     text-align: center;
     font-size: 2em;
   }
