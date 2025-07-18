@@ -157,7 +157,38 @@ header img {
   margin-top: -15%;
   margin-left: -15%;
 }
-
+/* Facts Section */
+#Facts-Section{
+  width: 80vw;
+  margin: 10% auto 10% auto;
+}
+.Facts-Headings{
+  width: 50%;
+  margin-bottom: 8%;
+}
+.Facts-Cards-Container{
+  display: grid;
+  grid-template-columns: repeat(4, 0.2fr);
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.Facts-Cards p{
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.Facts-Cards h1{
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.Facts-Cards{
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid #FF900E;
+  padding: 12% 2%;
+}
 /* For mobile */
 @media screen and (max-width: 575.98px) {
   nav {
@@ -197,24 +228,36 @@ header img {
   #Feature-Section img {
     width: 100%;
   }
-  .Feature-Img-Container {
-    display: none;
-  }
   #Feature-Section {
-    width: 90vw;
+    flex-direction: column;
+    align-items: center;
     margin: 10% auto 0 auto;
   }
   .Feature-Img-Container button {
-    display: none;
+    margin-top: -30%;
+    margin-left: 0;
+  }
+  .Feature-Img-Container {
+    text-align: center;
+    width: 100%;
   }
   .Feature-Cards {
     padding: 3% 5%;
     border-radius: 8px;
     margin-bottom: 4%;
   }
+  .Facts-Headings{
+    width: 100%;
+  }
+  .Facts-Cards-Container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex-direction: column;
+  }
+
 }
 /* For tab */
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 991.8px) {
   nav {
     margin-top: 50px;
     justify-content: space-between;
@@ -249,4 +292,28 @@ header img {
     text-align: center;
     font-size: 2em;
   }
+  #Feature-Section{
+    flex-direction: column;
+  }
+  .Feature-Img-Container {
+    width: 100%;
+    text-align: center;
+  }
+  .Feature-Img-Container img{
+    width: 100%;
+  }
+  .Feature-Img-Container button{
+    margin-top: -30%;
+    margin-left: 0;
+  }
+  
+  .Facts-Headings{
+    width: 100%;
+  }
+  .Facts-Cards-Container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    flex-direction: column;
+  }
+
 }
